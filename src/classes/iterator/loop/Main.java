@@ -1,4 +1,4 @@
-package classes.iterator;
+package classes.iterator.loop;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -16,7 +16,8 @@ public class Main {
         // Get the iterator
         Iterator<String> it = cars.iterator();
 
-        // Print the first item
-        System.out.println(it.next());
+        while(it.hasNext()) {
+            System.out.println(it.next());
+        }
     }
 }
